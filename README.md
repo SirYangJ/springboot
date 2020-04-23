@@ -4,7 +4,7 @@
 注意：因为本项目使用了lombok，所以开发工具需要安装lombok插件，请自行安装插件
 
 #cat部署
-1、把cat包放在tomcat中，启动tomcat，注意端口占用，tomcat默认占用了8080
+1、把cat.war包放在tomcat中，启动tomcat，注意端口占用，tomcat默认占用了8080。项目jdk必须为1.8，因为cat.war包编译版本为1.8，必须保持一致。
 2、项目增加cat依赖
     <dependency>
         <groupId>com.dianping.cat</groupId>
