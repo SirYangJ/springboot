@@ -6,7 +6,7 @@
 #cat部署
 #服务端配置
 1、把cat.war包放在tomcat中，启动tomcat，注意端口占用，tomcat默认占用了8080。项目jdk必须为1.8，因为cat.war包编译版本为1.8，必须保持一致。
-2、访问http://localhost:8080/cat/s/config?op=routerConfigUpdate，配置客户端路由，以下为本地单机配置
+2、访问http://localhost:8080/cat/s/config?op=routerConfigUpdate 配置客户端路由，以下为本地单机配置
 <?xml version="1.0" encoding="utf-8"?>
 <router-config backup-server="192.168.199.125" backup-server-port="2280">
    <default-server id="192.168.199.125" weight="1.0" port="2280" enable="true"/>
